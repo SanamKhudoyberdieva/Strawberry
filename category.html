@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS and FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="css/slick.min.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/media.css" media="all">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse es-navbar-container">
+                    <ul class="navbar-nav es-navbar-social">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_instagram.svg" alt="instagram icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_facebook.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li class="nav-item es-tg-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_telegram.svg" alt="telegram icon">
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown m-0">
+                            <button class="nav-link btn dropdown-toggle" href="#" id="navbarDropdown" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Uz
+                                <img class="dropdown-icon" src="img/ic_dropdown.jpg" alt="down">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Русский</a>
+                                <a class="dropdown-item" href="#">O'zbekcha</a>
+                                <a class="dropdown-item  border-0" href="#">English</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar-logo">
+                        <a href="#">
+                            <img src="img/header_logo.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav es-navbar-contact">
+                        <li class="nav-item m-0">
+                            <a class="contact-number" href="tel:998991191414">+99899 119 14 14</a>
+                            <p class="working-hours">Каждый день с 8:00 до 00:00</p>
+                        </li>
+                        <li class="nav-item es-heart-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_heart.svg" alt="heart icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registrationModal">
+                                <img src="img/ic_profile.svg" alt="profile icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_search.svg" alt="search icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_bag.svg" alt="bag icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-wrp-sm">
+                    <div class="navbar-nav">
+                        <a href="#">
+                            <img src="img/ic_logo_sm.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="nav-link btn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 10C18.3334 5.39763 14.6025 1.66667 10.0001 1.66667C5.39771 1.66667 1.66675 5.39763 1.66675 10C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.66667 2.5H7.5C5.875 7.36667 5.875 12.6333 7.5 17.5H6.66667" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.5 2.5C14.125 7.36667 14.125 12.6333 12.5 17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.5 13.3333V12.5C7.36667 14.125 12.6333 14.125 17.5 12.5V13.3333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.5 7.5C7.36667 5.875 12.6333 5.875 17.5 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Русский</a>
+                                <a class="dropdown-item" href="#">O'zbekcha</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 17C13.6421 17 17 13.6421 17 9.5C17 5.35786 13.6421 2 9.5 2C5.35786 2 2 5.35786 2 9.5C2 13.6421 5.35786 17 9.5 17Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 18L16 16" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5163 17.3418C10.2329 17.4418 9.76626 17.4418 9.48293 17.3418C7.06626 16.5168 1.66626 13.0751 1.66626 7.24179C1.66626 4.66679 3.74126 2.58345 6.29959 2.58345C7.81626 2.58345 9.15793 3.31679 9.99959 4.45012C10.8413 3.31679 12.1913 2.58345 13.6996 2.58345C16.2579 2.58345 18.3329 4.66679 18.3329 7.24179C18.3329 13.0751 12.9329 16.5168 10.5163 17.3418Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn nav-link" href="#" data-target="#menuModal" data-toggle="modal">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="36" height="36" rx="18" fill="#5C9F38"/>
+                                    <path d="M10 15H26" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M10 21H26" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="secondary-navbar m-0">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand btn-bg-red" href="#">Каталог</a>
+                    <a class="navbar-brand" href="#">Свежая клубника</a>
+                    <div class="navbar-brand dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Стандартные
+                            <img class="dropdown-icon" src="img/ic_dropdown.jpg" alt="down">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item border-0" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="navbar-brand dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Наборы для ярких событий
+                            <img class="dropdown-icon" src="img/ic_dropdown.jpg" alt="down">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item border-0" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="navbar-brand dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Наборы на праздники
+                            <img class="dropdown-icon" src="img/ic_dropdown.jpg" alt="down">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item border-0" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <a class="navbar-brand" href="#">Букеты</a>
+                    <a class="navbar-brand" href="#">Премиум наборы</a>
+                    <a class="navbar-brand" href="#">Корзины</a>
+                </div>
+            </nav>
+        </section>
+        <div class="category-section-bg">
+            <img class="img-fluid" src="img/category_bg.jpg" alt="product">
+            <h2 class="es-category-title">Каталог</h2>
+        </div>
+        <div class="container">
+            <ol class="breadcrumb es-breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Меню</a></li>
+                <li class="breadcrumb-item"><a href="#">Категория</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Название товара</li>
+            </ol>
+        </div>
+        <section class="category-section section-wrp">
+            <div class="es-tab-header">
+                <div class="container">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link btn-cart active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Стандартные</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link btn-cart" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Наборы для ярких
+                                событий</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link btn-cart" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Наборы на праздники</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link btn-cart" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Корзины</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link btn-cart" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">Премиум наборы</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link btn-cart" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab" aria-controls="pills-6" aria-selected="false">Букеты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                    <h2 class="section-title">Стандартные</h2>
+                    <div class="container">
+                        <div class="tab-content-product-wrp d-none">
+                            <div class="tab-content-product">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                            <div class="tab-content-product">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                            <div class="tab-content-product mb-0">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-product-inner-wrp">
+                            <div class="es-products-list">
+                                <div class="es-product-wrapper">
+                                    <div class="es-product-img">
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/product.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="es-product-content">
+                                        <div class="es-product-title">
+                                            <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
+                                        </div>
+                                        <div class="es-prices">
+                                            <div class="discount-price">450 000 сум</div>
+                                            <div class="real-price">450 000 сум</div>
+                                        </div>
+                                        <button class="btn-cart">В корзину</button>
+                                    </div>
+                                    <button class="btn-like">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                           
+                                    </button>
+                                </div>
+                                <div class="es-product-wrapper">
+                                    <div class="es-product-img">
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/product.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="es-product-content">
+                                        <div class="es-product-title">
+                                            <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
+                                        </div>
+                                        <div class="es-prices">
+                                            <div class="discount-price">450 000 сум</div>
+                                            <div class="real-price">450 000 сум</div>
+                                        </div>
+                                        <button class="btn-cart">В корзину</button>
+                                    </div>
+                                    <button class="btn-like">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="es-product-wrapper">
+                                    <div class="es-product-img">
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/product.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="es-product-content">
+                                        <div class="es-product-title">
+                                            <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
+                                        </div>
+                                        <div class="es-prices">
+                                            <div class="discount-price">450 000 сум</div>
+                                            <div class="real-price">450 000 сум</div>
+                                        </div>
+                                        <button class="btn-cart">В корзину</button>
+                                    </div>
+                                    <button class="btn-like">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                           
+                                    </button>
+                                </div>
+                                <div class="es-product-wrapper">
+                                    <div class="es-product-img">
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/product.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="es-product-content">
+                                        <div class="es-product-title">
+                                            <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
+                                        </div>
+                                        <div class="es-prices">
+                                            <div class="discount-price">450 000 сум</div>
+                                            <div class="real-price">450 000 сум</div>
+                                        </div>
+                                        <button class="btn-cart">В корзину</button>
+                                    </div>
+                                    <button class="btn-like">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                          
+                                    </button>
+                                </div>
+                                <div class="es-product-wrapper m-0">
+                                    <div class="es-product-img">
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/product.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="es-product-content">
+                                        <div class="es-product-title">
+                                            <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
+                                        </div>
+                                        <div class="es-prices">
+                                            <div class="discount-price">450 000 сум</div>
+                                            <div class="real-price">450 000 сум</div>
+                                        </div>
+                                        <button class="btn-cart">В корзину</button>
+                                    </div>
+                                    <button class="btn-like">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                          
+                                    </button>
+                                </div>
+                                <div class="es-product-wrapper m-0">
+                                    <div class="es-product-img">
+                                        <a href="#">
+                                            <img class="img-fluid" src="img/product.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="es-product-content">
+                                        <div class="es-product-title">
+                                            <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
+                                        </div>
+                                        <div class="es-prices">
+                                            <div class="discount-price">450 000 сум</div>
+                                            <div class="real-price">450 000 сум</div>
+                                        </div>
+                                        <button class="btn-cart">В корзину</button>
+                                    </div>
+                                    <button class="btn-like">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </button>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.7793 11.62L4.97596 7.81667C4.5268 7.3675 4.5268 6.63251 4.97596 6.18334L8.7793 2.38" stroke="#ED2024" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.2207 11.62L9.02404 7.81667C9.4732 7.3675 9.4732 6.63251 9.02404 6.18334L5.2207 2.38" stroke="#ED2024" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                    <h2 class="section-title">Наборы для ярких событий</h2>
+                    <div class="container">
+                        <div class="tab-content-product-wrp">
+                            <div class="tab-content-product">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                            <div class="tab-content-product">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                            <div class="tab-content-product mb-0">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                    <h2 class="section-title">Наборы на праздники</h2>
+                    <div class="container">
+                        <div class="tab-content-product-wrp">
+                            <div class="tab-content-product">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                            <div class="tab-content-product">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                            <div class="tab-content-product mb-0">
+                                <a href="#">
+                                    <img class="img-fluid" src="img/product.jpg" alt="product">
+                                </a>
+                                <div class="es-product-title text-center">
+                                    <a href="#">Наборы с клубникой в шоколаде</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 md-hide">
+                    <div class="footer-center-wrp">
+                        <div class="footer-logo-wrp">
+                            <a href="#">
+                                <img class="footer-logo" src="img/footer_logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <p class="about-company">Strawberry House – это кондитерская, специализирующаяся на клубнике в шоколаде, ягодах, экзотических фруктах и десертах премиального уровня.</p>
+                        <div class="footer-socials-wrp">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/ic_instagram.svg" alt="instagram icon">
+                                </a>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/ic_facebook.svg" alt="facebook icon">
+                                </a>
+                            </div>
+                            <div class="footer-social m-0">
+                                <a href="#">
+                                    <img src="img/ic_telegram.svg" alt="telegram icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-left-wrp">
+                        <h4 class="footer-nav">Категории</h4>
+                        <ul class="footer-links">
+                            <li class="footer-link">
+                                <a href="#">Свежая клубника</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Стандартные</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Наборы для ярких событий</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Наборы на праздники</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Букеты</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Премиум наборы</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Корзины</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 sm-hide">
+                    <div class="footer-center-wrp">
+                        <div class="footer-logo-wrp">
+                            <a href="#">
+                                <img src="img/footer_logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <p class="about-company">Strawberry House – это кондитерская, специализирующаяся на клубнике в шоколаде, ягодах, экзотических фруктах и десертах премиального уровня.</p>
+                        <div class="footer-socials-wrp">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/ic_instagram.svg" alt="instagram icon">
+                                </a>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/ic_facebook.svg" alt="facebook icon">
+                                </a>
+                            </div>
+                            <div class="footer-social m-0">
+                                <a href="#">
+                                    <img src="img/ic_telegram.svg" alt="telegram icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-right-wrp">
+                        <h4 class="footer-nav">Ссылки</h4>
+                        <ul class="footer-links">
+                            <li class="footer-link">
+                                <a href="#">Каталог</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Оферта</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="#">Акции</a>
+                            </li>
+                            <li class="footer-contact">
+                                <a href="tel:998991191414">+99899 119 14 14</a>
+                            </li>
+                            <li class="footer-contact m-0">
+                                <a href="#">info@Strawberry.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="es-footer-bottom">
+            <div class="container">
+                <div class="es-footer-bottom-content">
+                    <div class="es-footer-copyright">© 2023 Strawberry House.</div>
+                    <div class="es-footer-developer">Сайт разработан в <a href="#">Zetta Online</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" id="back-top">
+        <img alt="To Top" src="/img/ic_top.svg"/>
+    </a>
+
+    <!-- Mobile Tabs -->
+    <div class="mobile-nav d-lg-none">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/ru">
+                    <img src="/img/ic_main_active.svg" />
+                    <span class="menu-title">Главная</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ru/menu">
+                    <img src="/img/ic_menu_mini.svg" />
+                    <span class="menu-title">Меню</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ru/cart">
+                    <img src="/img/ic_cart_mini.svg" />
+                    <span class="menu-title">Корзина</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-target="#authModal" data-toggle="modal" href="#">
+                    <img src="/img/ic_profile_mini.svg" />
+                    <span class="menu-title">Профиль</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Menu Modal -->
+    <div class="modal fade d-lg-none" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header es-menu-modal-header">
+                    <div class="navbar-wrp-sm">
+                        <div class="navbar-nav">
+                            <a href="#">
+                                <img src="img/ic_logo_sm.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="nav-link btn dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 10C18.3334 5.39763 14.6025 1.66667 10.0001 1.66667C5.39771 1.66667 1.66675 5.39763 1.66675 10C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66667 2.5H7.5C5.875 7.36667 5.875 12.6333 7.5 17.5H6.66667" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.5 2.5C14.125 7.36667 14.125 12.6333 12.5 17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.5 13.3333V12.5C7.36667 14.125 12.6333 14.125 17.5 12.5V13.3333" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.5 7.5C7.36667 5.875 12.6333 5.875 17.5 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Русский</a>
+                                <a class="dropdown-item" href="#">O'zbekcha</a>
+                                <a class="dropdown-item" href="#">English</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.5 17C13.6421 17 17 13.6421 17 9.5C17 5.35786 13.6421 2 9.5 2C5.35786 2 2 5.35786 2 9.5C2 13.6421 5.35786 17 9.5 17Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18 18L16 16" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5163 17.3418C10.2329 17.4418 9.76626 17.4418 9.48293 17.3418C7.06626 16.5168 1.66626 13.0751 1.66626 7.24179C1.66626 4.66679 3.74126 2.58345 6.29959 2.58345C7.81626 2.58345 9.15793 3.31679 9.99959 4.45012C10.8413 3.31679 12.1913 2.58345 13.6996 2.58345C16.2579 2.58345 18.3329 4.66679 18.3329 7.24179C18.3329 13.0751 12.9329 16.5168 10.5163 17.3418Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn p-0 btn-close"  data-dismiss="modal" aria-label="Close">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="36" height="36" rx="18" fill="#5C9F38"/>
+                                        <path d="M11.7979 25C11.5937 25 11.3896 24.9219 11.2333 24.7672C10.9222 24.4562 10.9222 23.9506 11.2333 23.6396L23.6391 11.2348C23.9501 10.9238 24.4557 10.9238 24.7667 11.2348C25.0778 11.5458 25.0778 12.0514 24.7667 12.3624L12.3609 24.7672C12.2062 24.9219 12.0021 25 11.7979 25Z" fill="white"/>
+                                        <path d="M24.2037 25C23.9995 25 23.7954 24.9219 23.6391 24.7672L11.2333 12.3608C10.9222 12.0498 10.9222 11.5442 11.2333 11.2332C11.5443 10.9223 12.0499 10.9223 12.3609 11.2332L24.7667 23.638C25.0778 23.949 25.0778 24.4546 24.7667 24.7656C24.612 24.9219 24.4079 25 24.2037 25Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-body es-menu-modal-body">
+                    <div class="dropdowns-sm-wrapper">
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle red-color" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Каталог
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Свежая клубника
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Стандартные
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Наборы для ярких событий
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Наборы на праздники
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Букеты
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Премиум наборы
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                        <div class="btn-group dropright es-dropdown-wrp border-0">
+                            <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Корзины
+                                <img class="dropdown-arrow" src="img/ic_arrow_menu.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu"></div>
+                        </div>
+                    </div>
+                    <ul class="footer-links">
+                        <li class="footer-link">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Оферта</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Акции</a>
+                        </li>
+                        <li class="footer-contact-menu">
+                            <a href="tel:998991191414">+99899 119 14 14</a>
+                            <p class="working-hours">Каждый день с 8:00 до 00:00</p>
+                        </li>
+                        <div class="footer-socials-wrp">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/ic_instagram.svg" alt="instagram icon">
+                                </a>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/ic_facebook.svg" alt="facebook icon">
+                                </a>
+                            </div>
+                            <div class="footer-social m-0">
+                                <a href="#">
+                                    <img src="img/ic_telegram.svg" alt="telegram icon">
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn btn-close-modal" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.17004 14.8299L14.83 9.16992" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.83 14.8299L9.17004 9.16992" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img class="img-fluid modal-logo" src="img/header_logo.jpg" alt="logo">
+                    </div>
+                    <div class="gender-wrp">
+                        <label class="control-label es-control-label">Выберите пол</label>
+                        <input type="hidden" name="OrderForm[gender]" value="">
+                        <div id="orderform-gender" class="d-flex" role="radiogroup">
+                            <label class="radio-label es-radio-label"><input type="radio" name="OrderForm[gender]" value="male">Мужской</label>
+                            <label class="radio-label"><input type="radio" name="OrderForm[gender]" value="female">Женский</label>
+                        </div>
+                    </div>
+                    <div class="es-form-modal-wrp">
+                        <div class="form-group es-form-group">
+                            <input type="text" class="form-control es-form-control" id="InputNameModal"
+                                placeholder="* Ваше имя">
+                        </div>
+                        <div class="form-group es-form-group">
+                            <input type="text" onfocus="(this.type='date')" class="form-control es-form-control" id="InputDateModal"
+                                placeholder="* Дата рождения">
+                        </div>
+                        <div class="form-group es-form-group">
+                            <input type="text" class="form-control es-form-control" name="OrderForm[phone]"
+                                id="InputPhoneNumberModal" data-plugin="phone-mask" placeholder="+99890 990 90 90">
+                        </div>
+                        <div class="form-group es-form-group">
+                            <input type="password" class="form-control es-form-control" id="InputCodeModal"
+                                placeholder="* Введите код">
+                        </div>
+                    </div>
+                    <button class="btn btn-width btn-bg-green" href="#">Далее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/poper.min.js"></script>
+    <script src="js/bootstrap.min.js" async></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.js"></script>
+    <script src="js/sweet.alert.min.js"></script>
+    <script src="js/app.js?v=1.0.4"></script>
+</body>
+</html>

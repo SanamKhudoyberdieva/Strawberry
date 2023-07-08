@@ -134,7 +134,9 @@
     .second-carousel-desc {
         width: 320px;
     }
-    .second-carousel-content .btn-green {
+    .second-carousel-content .btn-green,
+    .category-section-bg,
+    .tab-content-product-inner-wrp .es-products-list {
         margin-bottom: 40px;
     }
     .second-carousel .es-carousel-item {
@@ -292,5 +294,46 @@
     }
     .product-slick .slick-prev {
         right: 50px;
+    }
+    .category-section-bg img {
+        height: 200px;
+    }
+    .es-category-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .nav-pills {
+        display: flex;
+        margin-bottom: 40px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .nav-pills .nav-link {
+        padding: 10px 18px !important;
+        border-radius: 50px;
+        width: max-content;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .tab-pane .section-title {
+        padding: 14px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .es-tab-header .container {
+        padding-right: 0;
+    }
+    .tab-content-product-wrp {
+        flex-direction: column;
+    }
+    .tab-content-product img {
+        width: 100%;
+    }
+    .tab-content-product {
+        margin-bottom: 30px;
+    }
+    .tab-content-product-inner-wrp .page-link {
+        height: 36px;
+        width: 36px;
     }
 }

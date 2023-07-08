@@ -1066,6 +1066,23 @@ input[type="radio"]::before {
 
 .category-section-bg {
     margin-bottom: 50px;
+    position: relative;
+}
+
+.es-category-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0;
+}
+
+.category-section-bg img {
+    height: 300px;
+    object-fit: cover;
 }
 
 .nav-pills .nav-link {
@@ -1080,6 +1097,7 @@ input[type="radio"]::before {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    padding-bottom: 15px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -1133,4 +1151,70 @@ button:focus {
     position: absolute;
     bottom: 87%;
     right: 30px;
+}
+
+::-webkit-scrollbar {
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--border-color);
+    margin-right: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-green-color); 
+    border-radius: 10px;
+}
+
+.tab-content-product-inner-wrp .es-products-list {
+    margin-bottom: 60px;
+}
+
+.tab-content-product-inner-wrp .page-link {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    border-color: transparent;
+    color: var(--main-green-color);
+}
+
+.tab-content-product-inner-wrp ul {
+    margin-bottom: 0;
+}
+
+.tab-content-product-inner-wrp .page-link:hover {
+    background-color: var(--main-green-color);
+    color: #FFFFFF;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 1px solid var(--main-red-color) !important;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 1px solid var(--main-red-color) !important;
+}
+
+.page-item:first-child .page-link:hover,
+.page-item:last-child .page-link:hover {
+    background-color: var(--main-red-color) !important;
+}
+
+.page-item:first-child .page-link:hover path,
+.page-item:last-child .page-link:hover path {
+    stroke: #FFFFFF;
+}
+
+.page-link:focus {
+    box-shadow: none;
 }
