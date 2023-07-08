@@ -1241,3 +1241,134 @@ button:focus {
     border: 1px solid var(--main-green-color);
     padding: 12px 65px;
 }
+
+.es-cart-header {
+    color: #000000;
+    font-size: 1.25rem;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.25rem 0;
+}
+
+.es-ch-block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.es-ch-product {
+    width: 40%;
+    display: flex;
+    text-align: left;
+    font-weight: 600;
+}
+
+.es-ch-price,
+.es-ch-total {
+    width: 20%;
+    font-weight: 600;
+}
+
+.es-ch-quantity {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.es-ch-action {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.es-ch-action .btn-icon:hover svg {
+    fill: var(--main-red-color);
+}
+
+.es-ch-action .btn-icon:hover path {
+    stroke: #FFFFFF;
+}
+
+.es-cart-item {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.es-cart-footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.es-back-link {
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.es-back-link img {
+    border: 1px solid var(--main-green-color);
+    border-radius: 50%;
+    padding: 4px 5px;
+}
+
+.es-cf-right {
+    width: 40%;
+}
+
+.es-cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 1.875rem;
+}
+
+.es-ch-title {
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.es-ch-img {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.es-ch-detail {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.es-product-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 44px;
+}
+
+.es-product-controls:hover .btn-counter {
+    color: var(--main-green-color);
+}
+
+.btn-counter:hover {
+    border: 1px solid var(--main-green-color);
+    color: var(--main-green-color) !important;
+}
+
+.btn-counter {
+    min-width: 40%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn-counter span {
+    min-width: 20%;
+}

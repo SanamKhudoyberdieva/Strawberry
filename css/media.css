@@ -344,4 +344,66 @@
         font-size: 24px;
         line-height: 40px;
     }
+    .es-border-t {
+        border-top: 1px solid var(--border-color);
+    }
+    .es-ch-block {
+        flex-direction: column;
+        align-items: start;
+    }
+    .es-cart-item {
+        padding: 30px 0;
+        position: relative;
+    }
+    .es-ch-product {
+        width: 100%;
+        flex-direction: column;
+    }
+    .es-ch-img {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+    }
+    .es-ch-detail, .es-cf-right {
+        width: 100%;
+    }
+    .es-ch-detail, .es-ch-price, .es-ch-quantity, .es-cart-total {
+        margin-bottom: 20px;
+    }
+    .es-ch-quantity .es-product-controls {
+        width: 116px;
+        height: 36px;
+    }
+    .es-cart-footer {
+        flex-direction: column;
+        padding-top: 35px;
+    }
+    .es-cf-right .btn {
+        margin-bottom: 35px;
+    }
+    .es-ch-price, .es-ch-total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .es-ch-price:before {
+        content: "Цена";
+    }
+    .es-ch-quantity {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+    }
+    .es-ch-quantity:before {
+        content: "Количество";
+    }
+    .es-ch-total:before {
+        content: "Итого";
+    }
+    .es-ch-action .btn-icon {
+        position: absolute;
+        right: 5px;
+        top: 30px;
+        padding: 0;
+    }
 }
