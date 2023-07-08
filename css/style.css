@@ -1116,3 +1116,21 @@ button:focus {
 .footer-social img:hover {
     opacity: .5;
 }
+
+.es-slider-for-img {
+    position: relative;
+}
+
+.es-slider-for-img img::after,
+.slick-track img:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.btn-like-product {
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 87%;
+    right: 30px;
+}

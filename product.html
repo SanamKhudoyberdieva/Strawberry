@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +14,6 @@
 
     <title>Document</title>
 </head>
-
 <body>
     <header class="main-header">
         <nav class="navbar navbar-expand-lg">
@@ -182,72 +180,118 @@
                 </div>
             </nav>
         </section>
-        <section class="discount-navigation">
+        <div class="container">
+            <ol class="breadcrumb es-breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Меню</a></li>
+                <li class="breadcrumb-item"><a href="#">Категория</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Название товара</li>
+            </ol>
+        </div>
+        <section class="product-section section-wrp">
             <div class="container">
-                <div class="discount-wrp">
-                    <div class="discount-content">
-                        <h2 class="discount-title">Скидки</h2>
-                        <p class="discount-desc">Набор сердце с клубникой в шоколаде в ягодном украшении</p>
-                        <a href="#" class="btn btn-green">Подробнее</a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="slider-for es-slider-for">
+                            <!-- <button class="slick-prev slick-arrow">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.22082 11.62L9.02416 7.81667C9.47333 7.3675 9.47333 6.63251 9.02416 6.18334L5.22083 2.38" stroke="#5C9F38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button> -->
+                            <div class="es-slider-for-img">
+                                <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                                <button class="btn-like btn-like-product">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="es-slider-for-img">
+                                <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                                <button class="btn-like btn-like-product">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="es-slider-for-img">
+                                <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                                <button class="btn-like btn-like-product">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="es-slider-for-img">
+                                <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                                <button class="btn-like btn-like-product">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="es-slider-for-img">
+                                <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                                <button class="btn-like btn-like-product">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- <button class="slick-next slick-arrow slick-slide">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.22082 11.62L9.02416 7.81667C9.47333 7.3675 9.47333 6.63251 9.02416 6.18334L5.22083 2.38" stroke="#5C9F38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button> -->
+                        </div>
+                        <div class="slider-nav es-slider-nav">
+                            <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                            <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                            <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                            <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                            <img class="img-fluid" src="img/product_s.jpg" alt="product">
+                        </div>
                     </div>
-                    <div class="discount-img">
-                        <img class="img-fluid sm-hide" src="img/discount-bg.svg" alt="product">
-                        <img class="img-fluid md-hide img-discount-sm" src="img/discount-bg-sm.svg" alt="product">
+                    <div class="col-md-6">
+                        <h1 class="pv-title">Люблю тебя</h1>
+                        <p class="pv-desc">Признавайтесь в своих чувствах красиво! Набор, который подарит вашей избраннице незабываемые эмоции, а ещё и поразит её вкусовые рецепторы.</p>
+                        <div class="pv-id">Артикул: <span>Dq5972-100</span> </div>
+                        <h3 class="pv-table-title">Ингредиенты:</h3>
+                        <table class="table table-bordered es-table-ingredients">
+                            <tbody>
+                                <tr>
+                                    <td>Клубника корейская С2 в шоколаде</td>
+                                    <td>Смородина</td>
+                                </tr>
+                                <tr>
+                                    <td>Банан в шоколаде</td>
+                                    <td>Шоколадные сердечки</td>
+                                </tr>
+                                <tr>
+                                    <td>Малина</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pv-price">500 000 сум</div>
+                        <div class="pv-cart-wrp">
+                            <button class="btn btn-red pv-btn">В корзину</button>
+                            <div class="pv-cooking">
+                                <p class="cooking-title">Время приготовления:</p>
+                                <div class="cooking-time">
+                                    <img src="img/ic_timer.svg" alt="timer">
+                                    5 - 7 часов</div>
+                            </div>
+                        </div>
+                        <div class="pv-attention"> <span>*</span> Обращаем ваше внимание, что при наличии в поставке ягод меньшего калибра количество ягод в букетах и наборах будет увеличено для соблюдения итогового
+                            веса и размера композиции.</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="main-carousel section-wrp">
+        <section class="carusel-product section-wrp">
             <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active es-carousel-item">
-                            <img src="img/carousel-bg.jpg" class="d-block w-100 img-fluid" alt="product">
-                            <div class="carousel-content">
-                                <h1 class="carousel-title">Букет из свежей клубники и клубники в шоколаде и из роз</h1>
-                            </div>
-                        </div>
-                        <div class="carousel-item es-carousel-item">
-                            <img src="img/carousel-bg.jpg" class="d-block w-100 img-fluid" alt="product">
-                            <div class="carousel-content">
-                                <h1 class="carousel-title">Букет из свежей клубники и клубники в шоколаде и из роз</h1>
-                            </div>
-                        </div>
-                        <div class="carousel-item es-carousel-item">
-                            <img src="img/carousel-bg.jpg" class="d-block w-100 img-fluid" alt="product">
-                            <div class="carousel-content">
-                                <h1 class="carousel-title">Букет из свежей клубники и клубники в шоколаде и из роз</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev sm-hide" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.22082 11.62L9.02416 7.81667C9.47333 7.3675 9.47333 6.63251 9.02416 6.18334L5.22083 2.38" stroke="#5C9F38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next sm-hide" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.22082 11.62L9.02416 7.81667C9.47333 7.3675 9.47333 6.63251 9.02416 6.18334L5.22083 2.38" stroke="#5C9F38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="news-section section-wrp">
-            <div class="container">
-                <h2 class="section-title">Новинки</h2>
-                <div class="es-products-list">
+                <h2 class="section-title section-title-sm">Похожие товары</h2>
+                <div class="es-category-list product-slick" style="margin-left: -1.125rem;margin-right: -1.125rem;">
                     <div class="es-product-wrapper">
                         <div class="es-product-img">
                             <a href="#">
@@ -336,7 +380,7 @@
                             </svg>                                          
                         </button>
                     </div>
-                    <div class="es-product-wrapper m-0">
+                    <div class="es-product-wrapper">
                         <div class="es-product-img">
                             <a href="#">
                                 <img class="img-fluid" src="img/product.jpg" alt="product">
@@ -355,10 +399,10 @@
                         <button class="btn-like">
                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                          
+                            </svg>
                         </button>
                     </div>
-                    <div class="es-product-wrapper m-0">
+                    <div class="es-product-wrapper">
                         <div class="es-product-img">
                             <a href="#">
                                 <img class="img-fluid" src="img/product.jpg" alt="product">
@@ -371,129 +415,6 @@
                             <div class="es-prices">
                                 <div class="discount-price">450 000 сум</div>
                                 <div class="real-price">450 000 сум</div>
-                            </div>
-                            <button class="btn-cart">В корзину</button>
-                        </div>
-                        <button class="btn-like">
-                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                            
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="second-carousel section-wrp">
-            <div class="container">
-                <div id="carouselSecondIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselSecondIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselSecondIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselSecondIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active es-carousel-item">
-                            <img src="img/bg-dark.jpg" class="d-block w-100 img-fluid" alt="product">
-                            <div class="second-carousel-content">
-                                <h1 class="second-carousel-title">Набор мини сердце с клубникой в цветном шоколаде</h1>
-                                <p class="second-carousel-desc">Картельные сговоры не допускают ситуации, при которой ключевые особенности структуры проекта являются только методом политического участия и объективно рассмотрены соответствующими инстанциями.</p>
-                                <a href="#" class="btn btn-green">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item es-carousel-item">
-                            <img src="img/bg-dark.jpg" class="d-block w-100 img-fluid" alt="product">
-                            <div class="second-carousel-content">
-                                <h1 class="second-carousel-title">Набор мини сердце с клубникой в цветном шоколаде</h1>
-                                <p class="second-carousel-desc">Картельные сговоры не допускают ситуации, при которой ключевые особенности структуры проекта являются только методом политического участия и объективно рассмотрены соответствующими инстанциями.</p>
-                                <a href="#" class="btn btn-green">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item es-carousel-item">
-                            <img src="img/bg-dark.jpg" class="d-block w-100 img-fluid" alt="product">
-                            <div class="second-carousel-content">
-                                <h1 class="second-carousel-title">Набор мини сердце с клубникой в цветном шоколаде</h1>
-                                <p class="second-carousel-desc">Картельные сговоры не допускают ситуации, при которой ключевые особенности структуры проекта являются только методом политического участия и объективно рассмотрены соответствующими инстанциями.</p>
-                                <a href="#" class="btn btn-green">Подробнее</b>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev sm-hide" href="#carouselSecondIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.22082 11.62L9.02416 7.81667C9.47333 7.3675 9.47333 6.63251 9.02416 6.18334L5.22083 2.38" stroke="#5C9F38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next sm-hide" href="#carouselSecondIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.22082 11.62L9.02416 7.81667C9.47333 7.3675 9.47333 6.63251 9.02416 6.18334L5.22083 2.38" stroke="#5C9F38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="popular-products section-wrp">
-            <div class="container">
-                <h2 class="section-title">Популярные</h2>
-                <div class="es-products-list">
-                    <div class="es-product-wrapper">
-                        <div class="es-product-img">
-                            <a href="#">
-                                <img class="img-fluid" src="img/product.jpg" alt="product">
-                            </a>
-                        </div>
-                        <div class="es-product-content">
-                            <div class="es-product-title">
-                                <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
-                            </div>
-                            <div class="es-prices">
-                                <div class="discount-price">450 000 сум</div>
-                            </div>
-                            <button class="btn-cart">В корзину</button>
-                        </div>
-                        <button class="btn-like">
-                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                          
-                        </button>
-                    </div>
-                    <div class="es-product-wrapper">
-                        <div class="es-product-img">
-                            <a href="#">
-                                <img class="img-fluid" src="img/product.jpg" alt="product">
-                            </a>
-                        </div>
-                        <div class="es-product-content">
-                            <div class="es-product-title">
-                                <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
-                            </div>
-                            <div class="es-prices">
-                                <div class="discount-price">450 000 сум</div>
-                            </div>
-                            <button class="btn-cart">В корзину</button>
-                        </div>
-                        <button class="btn-like">
-                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                            
-                        </button>
-                    </div>
-                    <div class="es-product-wrapper">
-                        <div class="es-product-img">
-                            <a href="#">
-                                <img class="img-fluid" src="img/product.jpg" alt="product">
-                            </a>
-                        </div>
-                        <div class="es-product-content">
-                            <div class="es-product-title">
-                                <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
-                            </div>
-                            <div class="es-prices">
-                                <div class="discount-price">450 000 сум</div>
                             </div>
                             <button class="btn-cart">В корзину</button>
                         </div>
@@ -515,27 +436,7 @@
                             </div>
                             <div class="es-prices">
                                 <div class="discount-price">450 000 сум</div>
-                            </div>
-                            <button class="btn-cart">В корзину</button>
-                        </div>
-                        <button class="btn-like">
-                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                         
-                        </button>
-                    </div>
-                    <div class="es-product-wrapper m-0">
-                        <div class="es-product-img">
-                            <a href="#">
-                                <img class="img-fluid" src="img/product.jpg" alt="product">
-                            </a>
-                        </div>
-                        <div class="es-product-content">
-                            <div class="es-product-title">
-                                <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
-                            </div>
-                            <div class="es-prices">
-                                <div class="discount-price">450 000 сум</div>
+                                <div class="real-price">450 000 сум</div>
                             </div>
                             <button class="btn-cart">В корзину</button>
                         </div>
@@ -545,59 +446,6 @@
                             </svg>                                          
                         </button>
                     </div>
-                    <div class="es-product-wrapper m-0">
-                        <div class="es-product-img">
-                            <a href="#">
-                                <img class="img-fluid" src="img/product.jpg" alt="product">
-                            </a>
-                        </div>
-                        <div class="es-product-content">
-                            <div class="es-product-title">
-                                <a href="#">Набор из клубники в шоколаде и ягод с надписью «люблю тебя»</a>
-                            </div>
-                            <div class="es-prices">
-                                <div class="discount-price">450 000 сум</div>
-                            </div>
-                            <button class="btn-cart">В корзину</button>
-                        </div>
-                        <button class="btn-like">
-                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.465 14.6075C9.21 14.6975 8.79 14.6975 8.535 14.6075C6.36 13.865 1.5 10.7675 1.5 5.51745C1.5 3.19995 3.3675 1.32495 5.67 1.32495C7.035 1.32495 8.2425 1.98495 9 3.00495C9.7575 1.98495 10.9725 1.32495 12.33 1.32495C14.6325 1.32495 16.5 3.19995 16.5 5.51745C16.5 10.7675 11.64 13.865 9.465 14.6075Z" stroke="#ED2024" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                           
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="instagram-section section-wrp">
-            <div class="container">
-                <div class="instagram-sec-container">
-                        <div class="instagram-sec-inner-con instagram-sec-content">
-                            <h4 class="sub-section-title">Следите за нами в <span> Instagram</span></h4>
-                            <button class="btn-red">Перейти в канал</button>
-                        </div>
-                        <div class="instagram-sec-inner-con">
-                            <div class="instagram-images-wrp">
-                                <div class="instagram-image">
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/instagram_1.jpg" alt="product">
-                                        <img class="instagram-icon" src="img/ic_instagram_border.svg" alt="instagram">
-                                    </a>
-                                </div>
-                                <div class="instagram-image">
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/instagram_1.jpg" alt="product">
-                                        <img class="instagram-icon" src="img/ic_instagram_border.svg" alt="instagram">
-                                    </a>
-                                </div>
-                                <div class="instagram-image">
-                                    <a href="#">
-                                        <img class="img-fluid" src="img/instagram_1.jpg" alt="product">
-                                        <img class="instagram-icon" src="img/ic_instagram_border.svg" alt="instagram">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                 </div>
             </div>
         </section>
@@ -982,5 +830,4 @@
     <script src="js/sweet.alert.min.js"></script>
     <script src="js/app.js?v=1.0.4"></script>
 </body>
-
 </html>

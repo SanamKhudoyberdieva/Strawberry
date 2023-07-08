@@ -191,8 +191,10 @@
         text-align: left;
         border-top: 1px solid var(--border-color);
         padding-top: 25px;
+        padding-left: 0;
     }
-    .footer-nav {
+    .footer-nav,
+    .es-slider-for {
         margin-bottom: 20px;
     }
     .footer-right-wrp {
@@ -224,5 +226,71 @@
     .navbar-expand-lg {
         padding-top: 11px;
         padding-bottom: 11px;
+    }
+    .es-breadcrumb {
+        margin: 40px 0;
+    }
+    .slider-nav .draggable,
+    .pv-id,
+    .product-section table,
+    .pv-btn  {
+        margin-bottom: 35px;
+    }
+    .pv-title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .pv-desc {
+        margin-bottom: 15px;
+    }
+    .pv-table-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .es-table-ingredients tr {
+        flex-direction: column;
+    }
+    .es-table-ingredients td {
+        width: 100%;
+    }
+    .pv-price {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .pv-cart-wrp {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    .pv-btn {
+        height: 50px;
+        margin-right: 0px;
+    }
+    .pv-attention {
+        padding: 20px;
+    }
+    .section-title-sm {
+        text-align: left;
+    }
+    .product-slick .slick-arrow {
+        top: -55px;
+        border: none;
+        padding: 0;
+    }
+    .product-slick .slick-arrow:hover{
+        background-color: transparent;
+    }
+    .product-slick .slick-next {
+        right: 20px;
+    }
+    .es-product-wrapper {
+        padding: 0 10px;
+    }
+    .es-category-list {
+        padding: 0 5px;
+    }
+    .product-slick .slick-prev {
+        right: 50px;
     }
 }
